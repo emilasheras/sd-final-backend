@@ -23,7 +23,7 @@
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/sd-final-backend.git
+git clone https://github.com/emilasheras/sd-final-backend.git
 cd sd-final-backend
 ```
 

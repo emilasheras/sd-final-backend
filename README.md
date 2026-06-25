@@ -1,7 +1,7 @@
 # SD Final — Backend
 
 ## Integrantes
-- [Nombre Apellido]
+- Emiliano Las Heras
 
 ## Tecnologías utilizadas
 - Java 17
@@ -16,7 +16,7 @@
 ## Requisitos de ejecución
 - Java 17 o superior
 - Maven 3.8+
-- Variables de entorno configuradas (ver abajo)
+- Variables de entorno configuradas
 
 ## Instrucciones paso a paso
 
@@ -37,8 +37,8 @@ mvn spring-boot:run
 ```
 
 ### 4. Verificar
-- Público: `GET http://localhost:8080/api/public/ping` → 200
-- Privado sin token: `GET http://localhost:8080/api/private/hello` → 401
+- Público: `GET http://localhost:8080/api/public/ping` -> 200
+- Privado sin token: `GET http://localhost:8080/api/private/hello` -> 401
 - H2 Console: `http://localhost:8080/h2-console`
 
 ## Endpoints

@@ -14,7 +14,7 @@ public class PublicController {
     public Map<String, String> ping() {
         return Map.of(
                 "status", "ok",
-                "message", "Endpoint público — no se requiere autenticación."
+                "message", "Endpoint público - no se requiere autenticación."
         );
     }
 }

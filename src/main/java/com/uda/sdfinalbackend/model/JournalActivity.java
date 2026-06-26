@@ -17,7 +17,7 @@ public class JournalActivity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String userSub;      // Auth0 subject — set server-side, never from request
+    private String userSub;      // Auth0 subject - set server-side, never from request
     private LocalDate date;
     private Integer hourSlot;    // 0–23 (start of the hour slot)
     private String description;

@@ -1,5 +1,6 @@
 package com.uda.sdfinalbackend.controller;
 
+import com.uda.sdfinalbackend.dto.DailyBehaviorDto;
 import com.uda.sdfinalbackend.dto.JournalActivityRequest;
 import com.uda.sdfinalbackend.model.Item;
 import com.uda.sdfinalbackend.model.JournalActivity;
@@ -21,6 +22,22 @@ public class PrivateController {
 
     private final ItemService itemService;
     private final JournalActivityService journalActivityService;
+
+    private static final List<DailyBehaviorDto> DAILY_BEHAVIORS = List.of(
+            new DailyBehaviorDto(1, "Tender la cama"),
+            new DailyBehaviorDto(2, "Bañarse"),
+            new DailyBehaviorDto(3, "Lavarse los dientes"),
+            new DailyBehaviorDto(4, "Lavar la ropa / Tender"),
+            new DailyBehaviorDto(5, "Lavar los platos"),
+            new DailyBehaviorDto(6, "Rutina de sueño"),
+            new DailyBehaviorDto(7, "Respetar las comidas"),
+            new DailyBehaviorDto(8, "Mantenimiento mascotas")
+    );
+
+    @GetMapping("/behaviors")
+    public List<DailyBehaviorDto> getBehaviors() {
+        return DAILY_BEHAVIORS;
+    }
 
     // testing endpoints below. i used them in the beginning of the project. might remove later. might not. who knows
     @GetMapping("/hello")
